@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./user.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="app">
+        <div class="hero">
+            <div class="heroWrap">
+                <div class="home">
+                    <div class="homeBanner">
+                        <div class="backHome">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <p>Profile</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                        <div class="userImg">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="userInfo">
+                            <p>Mr.Lazy</p>
+                            <p>0 MMK</p>
+                            <button type="button" class="refresh" onclick="location.reload()">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                                <span>Refresh</span>
+                            </button>
+                        </div>
+                        <div class="infoBox">
+                            <div class="day box">
+                                <p>0</p>
+                                <p>Today</p>
+                            </div>
+                            <div class="week box">
+                                <p>0</p>
+                                <p>This week</p>
+                            </div>
+                            <div class="month box">
+                                <p>0</p>
+                                <p>This month</p>
+                            </div>
+                            <div class="time box">
+                                <p>0</p>
+                                <p>All the time</p>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="topupBox boxes">
+                                <p>Top up confirmation</p>
+                                <label class="switch">
+                                    <input type="checkbox"/>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="pointHis boxes">
+                                <p>Point history</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="transaction boxes">
+                                <p>Transaction history</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="wrap settingsWrap " onclick="toggleMenu()">
+                            <div class="settings boxes">
+                                <p>Settings</p>
+                                <i class="fa-solid fa-angle-right angle"></i>
+                            </div>
+                            <div class="subSettings">
+                                <div class="subSettings1">
+                                    <p>Privacy and security</p>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <hr/>
+                                <div class="subSettings2">
+                                    <p>Device management</p>
+                                    <i class="fa-solid fa-computer"></i>
+                                </div>
+                                <hr/>
+                                <div class="subSettings3 logout">
+                                    <button type="button" class="logoutbtn">
+                                        Logout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let settings = document.querySelector(".settingsWrap");
+    let angle = document.querySelector(".angle");
+
+    function toggleMenu(){
+        settings.classList.toggle("open");
+        angle.classList.toggle("fa-angle-down");
+
+    }
+</script>
+</html>

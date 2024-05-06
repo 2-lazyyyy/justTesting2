@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --client: #f43726;
+}
+
+body{
+    background-color: #9e9e9e !important;
+    /* overflow-y: hidden; */
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.heroWrap{
+    background-color: #fff;
+    overflow-y: auto;
+    min-height: 100vh;
+    top: 0;
+    /* position: relative; */
+}
+
+.hero{
+    max-width: 450px;
+    /* position: relative; */
+}
+
+.navBar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 450px;
+    z-index: 1;
+    background-color: #ccc;
+    height: auto;
+    padding: 10px 50px;
+}
+
+.navWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noti{
+    position: relative!important;
+}
+
+.notiNum{
+    position: absolute;
+    right: 9.5%;
+    top: 3%;
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.navWrap p{
+    font-family: 'Jaro';
+    font-size: 1.1rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -1rem!important  ;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #000!important;
+    opacity: .3!important;
+}
+
+.carousel-indicators .active{
+    opacity: 1!important;
+}
+
+.collection-wrap img{
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.row{
+    margin: 0!important;
+}
+
+.con{
+    position: relative!important;
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.details{
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.collection-wrap .details img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.details span{
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+

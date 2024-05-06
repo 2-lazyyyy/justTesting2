@@ -22,7 +22,13 @@ body{
     overflow-y: auto;
     min-height: 100vh;
     top: 0;
+    opacity: 1;
+    transition: background-color .5s ease;
     /* position: relative; */
+}
+
+.heroWrap.darkmode{
+    background-color: #1d1d27;
 }
 
 .hero{
@@ -36,9 +42,23 @@ body{
     width: 100%;
     max-width: 450px;
     z-index: 4;
-    background-color: #ccc;
+    background-color: #fcfcfcfe;
     height: auto;
-    padding: 10px 50px;
+    padding: 15px 30px;
+    padding-left: 10px;
+    box-shadow: 0px 1px 4px rgb(146, 146, 146);
+    transition: background-color .5s ease;
+}
+
+.navBar.darkmode{
+    /* background-color: transparent;
+    backdrop-filter: blur(20px); */
+    background-color: #222;
+    box-shadow: 2px 5px 6px #11111151;
+}
+
+.navBar.darkmode p,.navBar.darkmode i,.navBar.darkmode span{
+    color: #ffffffda;
 }
 
 .navWrap{
@@ -48,29 +68,59 @@ body{
     align-items: center;
 }
 
-.noti{
-    position: relative!important;
+.navWrap i{
+    line-height: 40px;
+}
+
+.logoCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
 }
 
 .notiNum{
     position: absolute;
-    right: 9.5%;
-    top: 3%;
-    background-color: red;
-    width: 18px;
-    height: 18px;
+    left: 50%;
+    top: 0%;
+    background-color: goldenrod;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+    font-family: 'Jaro';
+    /* color: #fff; */
 }
 
 .navWrap p{
     font-family: 'Jaro';
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+}
+
+marquee{
+    font-family: 'Jaro';
+}
+
+.heroWrap.darkmode marquee{
+    color: #fff;
 }
 
 .carousel-inner{
     box-shadow: 2px 3px 5px rgb(124, 124, 124);
     border-radius: 0.5rem;
+}
+
+.heroWrap.darkmode .carousel-inner{
+    box-shadow: none;
 }
 
 .carousel-indicators{
@@ -82,15 +132,28 @@ body{
     opacity: .3!important;
 }
 
+.heroWrap.darkmode .carousel-indicators [data-bs-target]{
+    background-color: #fff!important;
+    opacity: .5!important;
+}
+
 .carousel-indicators .active{
+    opacity: 1!important;
+}
+
+.heroWrap.darkmode .carousel-indicators .active{
     opacity: 1!important;
 }
 
 .collection-wrap img{
     width: 100%;
-    height: 180px;
+    height: 210px;
     border-radius: 20px;
     box-shadow: 2px 5px 5px #737373;
+}
+
+.heroWrap.darkmode .collection-wrap img{
+    box-shadow: none;
 }
 
 .row{
@@ -126,3 +189,46 @@ body{
     font-weight: bold;
 }
 
+.footer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    z-index: 4;
+    background-color: #fff;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px 10px;
+    padding-left: 10px;
+    box-shadow: 0px -5px 5px -5px rgba(0,0,0,0.5);
+    transition: background-color .5s ease;
+}
+
+.heroWrap.darkmode .footer{
+    background-color: #111;
+}
+
+.footerWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.tabs span{
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: 'Jaro';
+}
+
+.heroWrap.darkmode .tabs{
+    color: #f0f0f0;
+}

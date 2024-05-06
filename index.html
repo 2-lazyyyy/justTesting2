@@ -14,14 +14,19 @@
         <div class="heroWrap">
                 <nav class="navBar">
                     <div class="navWrap">
-                        <p class='mb-0'>One Shot 7 Gaming</p>
-                        <div classs="noti">
+                        <div class="logoCon">
+                            <img src="./images/logo.jpg"/>
+                            <p class='mb-0'>One Shot 7 Gaming</p>
+                        </div>
+                        <div classs="noti" style="position: relative">
                             <i class="fa-solid fa-bell"></i>
                             <span class="notiNum">1</span>
                         </div>
+                        <i class="fa-solid fa-moon mode"></i>
                     </div>
                 </nav>
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade mt-5 py-2 px-3" data-bs-ride="carousel">
+                <marquee behavior="" direction="" class="py-2" style="margin-top: 5rem;">Hello! Welcome to My Site</marquee>
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade pb-2 px-3" data-bs-ride="carousel" >
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -81,9 +86,44 @@
                         </div>
                     </div>
                 </div>
+                <section class="footer">
+                    <div class="footerWrap">
+                        <div class="tabs">
+                            <i class="fa-solid fa-home"></i>
+                            <span>Home</span>
+                        </div>
+                        <div class="tabs">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Topup</span>
+                        </div>
+                        <div class="tabs">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Contact</span>
+                        </div>
+                        <div class="tabs">
+                            <i class="fa-solid fa-user"></i>
+                            <span>User</span>
+                        </div>
+                    </div>
+                </section>
         </div>
     </div>
     
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+        const mode = document.querySelector(".mode");
+        const heroWrap = document.querySelector(".heroWrap");
+        const navBar = document.querySelector(".navBar")
+        mode.addEventListener("click",()=>{
+            mode.classList.toggle('fa-sun');
+            mode.classList.toggle('fa-moon');
+            heroWrap.classList.toggle('darkmode');
+            navBar.classList.toggle('darkmode');
+    })
+    })
+    
+</script>
 
 </html>

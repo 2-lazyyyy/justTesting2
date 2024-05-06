@@ -35,7 +35,7 @@ body{
     top: 0;
     width: 100%;
     max-width: 450px;
-    z-index: 1;
+    z-index: 4;
     background-color: #ccc;
     height: auto;
     padding: 10px 50px;
@@ -82,7 +82,7 @@ body{
 }
 
 .collection-wrap img{
-    width: 150px;
+    width: 100%;
     height: 180px;
     border-radius: 20px;
 }

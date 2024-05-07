@@ -53,7 +53,7 @@
                 </button>
             </div>
             <div class="formWrap p-2 mt-5">
-                <form action="" method="">
+                <form action="" method="" class="buyform">
                     <div class="idInputWrap pb-4 pt-4 p-2">
                         <div class="noWrap no1Wrap p-1">
                             <span class="no">1</span>
@@ -69,6 +69,7 @@
                             <span class="no">2</span>
                         </div>
                         <label class="labelTitle mb-3">Package ရွေးချယ်ပါ</label>
+                        <span class="warn text-danger">*ကျေးဇူးပြု၍ ရွေးချယ်ပါ</span>
                         <div class="packageWrap w-100">
                             <div class="row">
                                 <div class="col-6 mb-3">
@@ -151,7 +152,7 @@
                             <span class="no">3</span>
                         </div>
                         <label class="labelTitle mb-3">ဝယ်ယူပါက ဝယ်မည်ကိုနှိပ်ပါ</label>
-                        <button class="btn btn-primary buynow w-100" style="font-weight: bold;">ဝယ်မည်</button>
+                        <button class="btn btn-primary buynow w-100" type="submit" style="font-weight: bold;">ဝယ်မည်</button>
                     </div>
                 </form>
             </div>
@@ -175,6 +176,50 @@
                     </div>
                 </div>
             </section>
+            <div class="thankWrap p-2 pb-5 rounded-2 d-none">
+                <div class="thank">
+                    <img src="./../images/logo.jpg" alt="logo"/>
+                    <h2>One Shot 7 Gaming မှဝယ်ယူအားပေးမှုအတွက် အထူးကျေးဇူးတင်ရှိပါသည်</h2>
+                    <div class="thankDetailsWrap mt-3 p-4">
+                        <div class="thankDetails">
+                            <h4>ဝယ်ယူမှုအကျဉ်းချုပ်</h4>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">ဝယ်ယူသည့်ပမာဏ</p>
+                                <p class="col-6">Diamond 37</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">အမည်</p>
+                                <p class="col-6">TKO</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">အကောင့် ID</p>
+                                <p class="col-6">TKO1234</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">ဂိမ်း ID</p>
+                                <p class="col-6">282581295(9458)</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">ဖုန်းနံပါတ်</p>
+                                <p class="col-6">09155423684</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">အော်ဒါရက်စွဲ</p>
+                                <p class="col-6">8.5.2024</p>
+                            </div>
+                            <div class="thankAmount thankBox row g-2">
+                                <p class="col-6">ဈေးနှုန်း</p>
+                                <p class="col-6">3000 MMK</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="refTags w-100 d-flex justify-content-between mt-3">
+                        <a href="./../index.html">မူလစာမျက်နှာသို့ပြန်သွားရန်</a>
+                        <a href="./mlSession.html">ထပ်မံဝယ်ယူရန် </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -191,8 +236,23 @@
         
         // Add 'active' class to the clicked element
         this.classList.add('active');
+        document.querySelector('.warn').classList.remove('active')
     });
 });
+
+const buyForm = document.querySelector('.buyform');
+buyForm.addEventListener('submit',()=>{
+    const boxes = document.querySelectorAll('.diaWrap');
+    const isActive = Array.from(boxes).some(box=>box.classList.contains('active'));
+
+    if(isActive){
+        event.preventDefault();
+        document.querySelector('.heroWrap').classList.toggle('filter')
+    } else {
+        event.preventDefault();
+        document.querySelector('.warn').classList.add('active')
+    }
+})
 
 </script>
 </html>

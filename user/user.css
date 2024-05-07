@@ -26,7 +26,7 @@ body{
 .heroWrap{
     background-color: #f0f0f0;
     overflow-y: auto;
-    height: 110vh;
+    height: 115vh;
     top: 0px;
     position: relative;
 }

@@ -13,7 +13,7 @@
 
 body{
     background-color: #9e9e9e;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .hero{
@@ -26,7 +26,7 @@ body{
 .heroWrap{
     background-color: #f0f0f0;
     overflow-y: auto;
-    height: 100vh;
+    height: 110vh;
     top: 0px;
     position: relative;
 }

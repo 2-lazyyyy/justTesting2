@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./noti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="mx-auto hero">
+        <div class="heroWrap">
+            <nav class="navBar">
+                <div class="navWrap">
+                    <i class="fa-solid fa-arrow-left" onclick="location.href='./../index.html'"></i>
+                    <span class="noti">အသိပေးချက်</span>
+                    <i class="fa-solid fa-moon mode"></i>
+                </div>
+            </nav>
+            <div class="main py-2 px-3" style="margin-top: 5rem;">
+                <div class="notiPack">
+                    <div class="notiImg p-2">
+                        <i class="fa-regular fa-bell bell"></i>
+                    </div>
+                    <div class="notiContentWrap mt-1">
+                        <div class="notiTitleWrap" onclick="toggleText()">
+                            <h4 class="notiTitle">မနက်ဖြန် KOF EVENT နော်...</h4>
+                            <i class="fa-solid fa-angle-down angle" ></i>
+                        </div>
+                        <p class="notiContent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sit ut voluptatibus distinctio eum natus quae nobis. Saepe, vel dignissimos?</p>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+            <section class="footer">
+                <div class="footerWrap">
+                    <div class="tabs" onclick="location.href='./../index.html'">
+                        <i class="fa-solid fa-home"></i>
+                        <span>ပင်မ</span>
+                    </div>
+                    <div class="tabs" onclick="location.href='./../topup/topupkpay.html'">
+                        <i class="fa-solid fa-wallet" ></i>
+                        <span>ငွေဖြည့်</span>
+                    </div>
+                    <div class="tabs" onclick="location.href='./../contact/contact.html'">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>ဆက်သွယ်ရန်</span>
+                    </div>
+                    <div class="tabs" onclick="location.href='./../user/user.html'">
+                        <i class="fa-solid fa-user"></i>
+                        <span>အကောင့်</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="./../darkMode.js"></script>
+<script>
+    let noti = document.querySelector(".notiContentWrap");
+    let angle = document.querySelector(".angle");
+
+    function toggleText(){
+        noti.classList.toggle("active");
+    }
+
+    let bell = document.querySelector('.bell');
+    bell.addEventListener('click',()=>{
+        bell.classList.toggle('fa-regular');
+        bell.classList.toggle('fa-solid');
+    })
+</script>
+</html>

@@ -13,10 +13,11 @@
             <div class="heroWrap">
                 <div class="home">
                     <div class="homeBanner">
-                        <div class="backHome">
-                            <i class="fa-solid fa-arrow-left"></i>
-                            <p>Profile</p>
+                        <div class="backHome" >
+                            <i class="fa-solid fa-arrow-left" onclick="location.href='./../index.html'"></i>
+                            <p onclick="location.href='./../index.html'">Profile</p>
                         </div>
+                        <i class="fa-solid fa-moon mode" style="position: absolute; right: 10%; top: 1.8%; z-index: 999"></i>
                     </div>
                     <div class="contentBox">
                         <div class="userImg">
@@ -57,13 +58,13 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="wrap">
+                        <div class="wrap" onclick="location.href='./history/history.html'">
                             <div class="pointHis boxes">
                                 <p>Point history</p>
                                 <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
-                        <div class="wrap">
+                        <div class="wrap" onclick="location.href='./history/history.html'">
                             <div class="transaction boxes">
                                 <p>Transaction history</p>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -86,7 +87,7 @@
                                 </div>
                                 <hr/>
                                 <div class="subSettings3 logout">
-                                    <button type="button" class="logoutbtn">
+                                    <button type="button" class="logoutbtn" onclick="location.href='./../login/login.html'">
                                         Logout
                                     </button>
                                 </div>
@@ -94,10 +95,32 @@
                         </div>
                     </div>
                 </div>
+                <section class="footer">
+                    <div class="footerWrap">
+                        <div class="tabs" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-home"></i>
+                            <span>ပင်မ</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../topup/topupkpay.html'">
+                            <i class="fa-solid fa-wallet" ></i>
+                            <span>ငွေဖြည့်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../contact/contact.html'">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>ဆက်သွယ်ရန်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../user/user.html'">
+                            <i class="fa-solid fa-user"></i>
+                            <span>အကောင့်</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
+    <div class="navBar" style="display: none;"></div>
 </body>
+
 <script>
     let settings = document.querySelector(".settingsWrap");
     let angle = document.querySelector(".angle");
@@ -108,4 +131,5 @@
 
     }
 </script>
+<script src="./../darkMode.js"></script>
 </html>

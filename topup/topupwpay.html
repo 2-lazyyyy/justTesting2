@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="my">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,91 +12,114 @@
 <body>
     <div id="app">
         <div class="mx-auto hero">
-            <nav class="nav">
-                <div class="d-flex w-100 align-items-center justify-content-center" style="height: 50px;">
-                    <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;">
-                        <i class="fa-solid fa-angle-left "></i>
+            <div class="heroWrap">
+                <nav class="nav navBar">
+                    <div class="d-flex w-100 align-items-center justify-content-center" style="height: 50px;">
+                        <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-angle-left "></i>
+                        </div>
+                        <p class="mb-0">ငွေဖြည့်မည်</p>
+                        <i class="fa-solid fa-moon mode" style="position: absolute; right: 10%"></i>
                     </div>
-                    <p class="mb-0">ငွေဖြည့်မည်</p>
-                </div>
-            </nav>
-            <div class="bg-white hide-scrollbar main-view">
-                <div class="pt-4 px-4 formWrapp">
-                    <form action="" method="" class="d-flex flex-column h-100 waveform">
-                        <label class="mb-2">ငွေသွင်းမည့် အမျိုးအစား</label>
-                        <div class="options d-flex p-0 mb-4">
-                            <div class="col-6 ps-0">
-                                <div class="border border-2  me-1 d-flex align-items-center rounded px-2 py-2"  onclick="location.href='./topupkpay.html'">
-                                    <img src="./../kpay.svg" alt="kpay"/>
-                                    <label class="form-check-label mx-2">KBZ Pay</label>
-                                </div>  
-                            </div>
-                            <div class="col-6 ps-0">
-                                <div class="border-custom ms-1 selected-payment  d-flex align-items-center rounded px-2 py-2">
-                                    <img src="./../wpay.svg" alt="wpay">
-                                    <label class="form-check-label mx-2">Wave Pay</label>
+                </nav>
+                <div class="bg-white hide-scrollbar main-view">
+                    <div class="p-4">
+                        <form action="" method="" class="d-flex flex-column h-100 kpayform">
+                            <label class="mb-2">ငွေသွင်းမည့် အမျိုးအစား</label>
+                            <div class="options d-flex p-0 mb-4">
+                                <div class="col-6 ps-0">
+                                    <div class="me-1 border border-2  d-flex align-items-center rounded px-2 py-2" onclick="location.href='./topupkpay.html'">
+                                        <img src="./../kpay.svg" alt="kpay"/>
+                                        <label class="form-check-label mx-2">KBZ Pay</label>
+                                    </div>  
                                 </div>
-                            </div>
-                        </div>
-                        <label class="mb-2">ငွေသွင်းရမည့် အကောင့်</label>
-                        <div class="border-custom rounded px-3 py-2 d-flex align-items-center mb-4">
-                            <img src="./../wpay.svg" alt="kpay" class="me-2" style="height: 40px"/>
-                            <div>
-                                <!-- <span class="title">Please check Ph No on Viber</span> -->
-                                <p class="fs-16 fw-bold mb-0" id="phoneNumber">0923456789</p>
-                            </div>
-                            <i class="fa-solid fa-copy text-custom ms-auto" id="copy"></i>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="" class="mb-2">Amount</label>
-                            <input type="tel" minlength="0" required placeholder="Amount ရိုက်ထည့်ပါ" class="form-control primary-input" id="dep_amount" autocomplete="off"/>
-                        </div>
-                        <h2 class="mb-3" style="font-weight: 600; font-size: .9rem">Amount ရွေးပါ</h2>
-                        <div class="row">
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class=" text-custom bg-amount text-center py-2 rounded btn-amt" value="5000">5,000</button>
-                            </div>
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="10000">10,000</button>
-                            </div>
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="20000">20,000</button>
-                            </div>
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="50000">50,000</button>
-                            </div>
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="100000">100,000</button>
-                            </div>
-                            <div class="col-4 mb-2 text-center">
-                                <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="200000">200,000</button>
-                            </div>
-                        </div>
-                        <button type="submit" class="text-dark btn rounded-3 primary-btn btn-primary w-100 wave-btn text-dark mt-2">ဆက်သွားမည်</button>
-                    </form>
-                    <hr/>
-                    <div class="border-custom mt-2 rounded">
-                        <div class="py-2 bg-custom">
-                            <p class="mb-0 text-center text-dark contactText">ငွေဖြည့်နည်းမသိပါက ဆက်သွယ်ရန်</p>
-                        </div>
-                        <div class="p-2 pb-0">
-                            <div class="row">
-                                <div class="col-12 mb-2">
-                                    <div class="text-start fs-13">
-                                         Viber
+                                <div class="col-6 ps-0">
+                                    <div class=" border-custom  ms-1  selected-payment d-flex align-items-center rounded px-2 py-2" >
+                                        <img src="./../wpay.svg" alt="wpay">
+                                        <label class="form-check-label mx-2">Wave Pay</label>
                                     </div>
                                 </div>
                             </div>
+                            <label class="mb-2">ငွေသွင်းရမည့် အကောင့်</label>
+                            <div class="border-custom rounded px-3 py-2 d-flex align-items-center mb-4">
+                                <img src="./../wpay.svg" alt="kpay" class="me-2" style="height: 40px"/>
+                                <div>
+                                    <!-- <span class="title">Please check Ph No on Viber</span> -->
+                                    <p class="fs-16 fw-bold mb-0" id="phoneNumber">0912345678</p>
+                                </div>
+                                <i class="fa-solid fa-copy text-custom ms-auto" id="copyButton"></i>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="" class="mb-2">Amount</label>
+                                <input type="tel" minlength="0" required placeholder="Amount ရိုက်ထည့်ပါ" class="form-control primary-input" id="dep_amount" autocomplete="off"/>
+                            </div>
+                            <h2 class="mb-3" style="font-weight: 600; font-size: .9rem">Amount ရွေးပါ</h2>
                             <div class="row">
-                                <div class="col-6 d-flex mb-1">
-                                    <a href="#" class="d-flex align-items-center text-decoration-none"></a>
-                                    <i class="fa-solid fa-phone text-custom me-2"></i>
-                                    <div class="text-custom viberphNo">09123456789</div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class=" text-custom bg-amount text-center py-2 rounded btn-amt" value="5000">5,000</button>
+                                </div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="10000">10,000</button>
+                                </div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="20000">20,000</button>
+                                </div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="50000">50,000</button>
+                                </div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="100000">100,000</button>
+                                </div>
+                                <div class="col-4 mb-2 text-center">
+                                    <button type="button" class="text-custom bg-amount text-center py-2 rounded btn-amt" value="200000">200,000</button>
+                                </div>
+                            </div>
+                            <button type="submit" class="text-dark btn rounded-3 primary-btn btn-primary w-100 login-btn text-dark mt-2">ဆက်သွားမည်</button>
+                        </form>
+                        <hr/>
+                        <div class="border-custom mt-2 rounded">
+                            <div class="py-2 bg-custom">
+                                <p class="mb-0 text-center text-dark contactText">ငွေဖြည့်နည်းမသိပါက ဆက်သွယ်ရန်</p>
+                            </div>
+                            <div class="p-2 pb-0">
+                                <div class="row">
+                                    <div class="col-12 mb-2">
+                                        <div class="text-start fs-13 viber">
+                                             Viber
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 d-flex mb-1">
+                                        <a href="#" class="d-flex align-items-center text-decoration-none"></a>
+                                        <i class="fa-solid fa-phone text-custom me-2"></i>
+                                        <div class="text-custom viberphNo">09123456789</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <section class="footer">
+                    <div class="footerWrap">
+                        <div class="tabs" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-home"></i>
+                            <span>ပင်မ</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../topup/topupkpay.html'">
+                            <i class="fa-solid fa-wallet" ></i>
+                            <span>ငွေဖြည့်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../contact/contact.html'">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>ဆက်သွယ်ရန်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../user/user.html'">
+                            <i class="fa-solid fa-user"></i>
+                            <span>အကောင့်</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -121,6 +144,7 @@
         });
     });
 </script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
     const copyButton = document.getElementById("copyButton");
@@ -147,13 +171,15 @@
     });
 });
 
-const waveForm = document.querySelector(".waveform");
+const kpayForm = document.querySelector(".kpayform");
 // const dep_amount = document.getElementById("")
 
-waveForm.addEventListener("submit",()=>{
+kpayForm.addEventListener("submit",()=>{
     event.preventDefault();
-    location.href = './continuedwpay.html'
+    location.href = './continuedkpay.html'
 })
 
 </script>
+
+<script src="./../darkMode.js"></script>
 </html>

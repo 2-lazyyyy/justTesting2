@@ -23,7 +23,7 @@ body{
     min-height: 100vh;
     top: 0;
     opacity: 1;
-    transition: background-color .5s ease;
+    /* transition: background-color .5s ease; */
     /* position: relative; */
 }
 
@@ -47,7 +47,7 @@ body{
     padding: 15px 30px;
     padding-left: 10px;
     box-shadow: 0px 1px 4px rgb(146, 146, 146);
-    transition: background-color .5s ease;
+    /* transition: background-color .5s ease; */
 }
 
 .navBar.darkmode{
@@ -157,7 +157,7 @@ marquee{
     padding: 10px 10px;
     padding-left: 10px;
     box-shadow: 0px -5px 5px -5px rgba(0,0,0,0.5);
-    transition: background-color .5s ease;
+    /* transition: background-color .5s ease; */
 }
 
 .heroWrap.darkmode .footer{
@@ -180,7 +180,7 @@ marquee{
 }
 
 .tabs span{
-    font-weight: 500;
+    font-weight: bold;
     font-size: 0.8rem;
     font-family: 'Jaro';
 }
@@ -198,7 +198,7 @@ marquee{
     color: #f0f0f0;
 }
 
-.idInputWrap,.diaPriceWrap{
+.idInputWrap,.diaPriceWrap,.buynowWrap{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -210,7 +210,7 @@ marquee{
     box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 }
 
-.heroWrap.darkmode .idInputWrap,.heroWrap.darkmode .diaPriceWrap{
+.heroWrap.darkmode .idInputWrap,.heroWrap.darkmode .diaPriceWrap,.heroWrap.darkmode .buynowWrap{
     background-color: rgba(45, 68, 119, 0.67);
     /* backdrop-filter: blur(20px); */
     /* box-shadow: none; */
@@ -258,6 +258,10 @@ marquee{
     font-weight: bold;
 }
 
+.heroWrap.darkmode .no{
+    background-color: rgb(1, 151, 201);
+}
+
 .dia{
     display: flex;
     justify-content: space-between;
@@ -271,7 +275,8 @@ marquee{
 
 .diaWrap{
     border-radius: 15px;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+    /* box-shadow: 1px 3px 5px rgba(0,0,0,0.3); */
+    border: 2px solid goldenrod;
 }
 
 .amount{
@@ -279,13 +284,13 @@ marquee{
 }
 
 .price{
-    /* font-weight: 600; */
-    font-family: 'Jaro','Poppins';
+    font-weight: 600;
+    font-family: 'Poppins';
     font-size: 14px;
 }
 
 .amount{
-    font-size: 14px;
+    font-size: 12px;
     /* font-weight: 600; */
     font-family: 'Jaro','Poppins';
 }
@@ -297,4 +302,12 @@ marquee{
 .col-6{
     padding-right: 0.5rem!important;
     padding-left: 0.5rem!important;
+}
+
+.diaWrap.active{
+    background-color: #ccc;
+}
+
+.heroWrap.darkmode .diaWrap.active{
+    background-color: #999;
 }

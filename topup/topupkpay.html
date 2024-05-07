@@ -12,13 +12,14 @@
 <body>
     <div id="app">
         <div class="mx-auto hero">
-            <div class="hero-wrap">
-                <nav class="nav">
+            <div class="heroWrap">
+                <nav class="nav navBar">
                     <div class="d-flex w-100 align-items-center justify-content-center" style="height: 50px;">
-                        <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;">
+                        <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;" onclick="location.href='./../index.html'">
                             <i class="fa-solid fa-angle-left "></i>
                         </div>
                         <p class="mb-0">ငွေဖြည့်မည်</p>
+                        <i class="fa-solid fa-moon mode" style="position: absolute; right: 10%"></i>
                     </div>
                 </nav>
                 <div class="bg-white hide-scrollbar main-view">
@@ -83,7 +84,7 @@
                             <div class="p-2 pb-0">
                                 <div class="row">
                                     <div class="col-12 mb-2">
-                                        <div class="text-start fs-13">
+                                        <div class="text-start fs-13 viber">
                                              Viber
                                         </div>
                                     </div>
@@ -99,6 +100,26 @@
                         </div>
                     </div>
                 </div>
+                <section class="footer">
+                    <div class="footerWrap">
+                        <div class="tabs" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-home"></i>
+                            <span>ပင်မ</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../topup/topupkpay.html'">
+                            <i class="fa-solid fa-wallet" ></i>
+                            <span>ငွေဖြည့်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../contact/contact.html'">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>ဆက်သွယ်ရန်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../user/user.html'">
+                            <i class="fa-solid fa-user"></i>
+                            <span>အကောင့်</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -159,4 +180,6 @@ kpayForm.addEventListener("submit",()=>{
 })
 
 </script>
+
+<script src="./../darkMode.js"></script>
 </html>

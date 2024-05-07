@@ -84,7 +84,7 @@ body{
     background-color: #1d1d27!important;
 }
 
-.heroWrap.darkmode h1,.heroWrap.darkmode span{
+.heroWrap.darkmode h1,.heroWrap.darkmode span,.heroWrap.darkmode h2,.heroWrap.darkmode hr{
     color: #f0f0f0;
 }
 
@@ -96,57 +96,6 @@ body{
     color: #f0f0f0;
 }
 
-.fs-14{
-    font-size: .9rem!important;
-}
-
-.fs-18{
-    font-size: 1.125rem!important;
-}
-
-.fs-12{
-    font-size: .75rem!important;
-}
-
-.fw-600{
-    font-weight: 600!important;
-}
-
-.fw-400{
-    font-weight: 400!important;
-}
-
-.fw-700{
-    font-weight: 700!important;
-}
-
-.primary-input{
-    background-color: #fff0a4!important;
-    padding: 0.75rem 1rem!important;
-    border: 0!important;
-    border-radius: 10px!important;
-    font-size: .9rem!important;
-    font-weight: 400!important;
-}
-
-.secondary-btn {
-    padding: .6rem 0!important;
-    background-color: #fff0a4!important;
-    border-color: #fff0a4!important;
-    outline-color: #fff0a4!important;
-    border: 2px solid #ffc107!important;
-    color: #000
-}
-
-.primary-btn{
-    padding: .6rem 0!important;
-    background-color: #ffc107!important;
-    border-color: #ffc107!important;
-    outline-color: #ffc107!important;
-    border: 2px solid #ffc107!important;
-    font-size: .9rem!important;
-    font-weight: 600!important;
-}
 
 hr {
     margin: 1rem 0;

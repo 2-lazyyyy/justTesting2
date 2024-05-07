@@ -12,67 +12,91 @@
 <body>
     <div id="app">
         <div class="mx-auto hero">
-            <nav class="nav">
-                <div class="d-flex w-100 align-items-center justify-content-center" style="height: 50px;">
-                    <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;">
-                        <i class="fa-solid fa-angle-left "></i>
+            <div class="heroWrap">
+                <nav class="nav navBar">
+                    <div class="d-flex w-100 align-items-center justify-content-center" style="height: 50px;">
+                        <div class="goBack d-flex align-items-center justify-content-center" style="left: 1rem; position: absolute; width: 2rem; height: 2rem; z-index: 50;" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-angle-left "></i>
+                        </div>
+                        <p class="mb-0">ငွေဖြည့်မည်</p>
+                        <i class="fa-solid fa-moon mode" style="position: absolute; right: 10%"></i>
                     </div>
-                    <p class="mb-0">ငွေဖြည့်မည်</p>
-                </div>
-            </nav>
-            <div class="bg-white hide-scrollbar main-view">
-                <div class="p-4">
-                    <form action="" class="d-flex flex-column h-100" method="">
-                        <div class="text-center">
-                            <img src="./../kpay.svg" alt="kpay" style="width: 15%; aspect-ratio: 1/1;">
-                            <h1 class="fw-600 fs-18 mb-4 mt-4">
-                                KBZ Pay
-                                <span class="fw-400 fs-14">နှင့်ငွေဖြည့်မည်</span>
-                            </h1>
-                        </div>
-                        <div class="mt-4">
-                            <div class="fw-600 fs-14 mb-1">
-                                လုပ််ငန်းစဥ်နံပါတ် 
-                                <span class="fw-400 fs-12">(နောက်ဆုံးဂဏန်း ၆ လုံး)</span>
+                </nav>
+                <div class="bg-white hide-scrollbar main-view">
+                    <div class="p-4">
+                        <form action="" class="d-flex flex-column h-100" method="">
+                            <div class="text-center">
+                                <img src="./../kpay.svg" alt="kpay" style="width: 15%; aspect-ratio: 1/1;">
+                                <h1 class="fw-600 fs-18 mb-4 mt-4">
+                                    KBZ Pay
+                                    <span class="fw-400 fs-14">နှင့်ငွေဖြည့်မည်</span>
+                                </h1>
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="tel" minlength="0" required placeholder="လုပ််ငန်းစဥ်နံပါတ်၏ နောက်ဆုံးဂဏန်း ၆လုံး ထည့်ပါ" class="fw-400 fs-14 form-control primary-input">
+                            <div class="mt-4">
+                                <div class="fw-600 fs-14 mb-1 hello">
+                                    လုပ််ငန်းစဥ်နံပါတ် 
+                                    <span class="fw-400 fs-12">(နောက်ဆုံးဂဏန်း ၆ လုံး)</span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="tel" minlength="0" required placeholder="လုပ််ငန်းစဥ်နံပါတ်၏ နောက်ဆုံးဂဏန်း ၆လုံး ထည့်ပါ" class="fw-400 fs-14 form-control primary-input">
+                                </div>
                             </div>
-                        </div>
-                        <div class="mt-auto d-flex">
-                            <div class="w-50 me-1">
-                                <button type="button" class="btn font-poppins btn-light fw-700 rounded-3 fs-14 secondary-btn w-100 login-btn mt-auto" onclick="location.href='topupkpay.html'">ရှေ့သို့</button>
+                            <div class="mt-auto d-flex">
+                                <div class="w-50 me-1">
+                                    <button type="button" class="btn font-poppins btn-light fw-700 rounded-3 fs-14 secondary-btn w-100 login-btn mt-auto" onclick="location.href='topupkpay.html'">ရှေ့သို့</button>
+                                </div>
+                                <div class="w-50 ms-1">
+                                    <button type="submit" class="btn font-poppins btn-light fw-700 rounded-3 fs-14 primary-btn btn-primary w-100 login-btn mt-auto">တင်ပြမည်</button>
+                                </div>
                             </div>
-                            <div class="w-50 ms-1">
-                                <button type="submit" class="btn font-poppins btn-light fw-700 rounded-3 fs-14 primary-btn btn-primary w-100 login-btn mt-auto">တင်ပြမည်</button>
+                        </form>
+                        <hr/>
+                        <div class="border-custom mt-2 rounded">
+                            <div class="py-2 bg-custom">
+                                <p class="mb-0 text-center text-dark contactText">ငွေဖြည့်နည်းမသိပါက ဆက်သွယ်ရန်</p>
                             </div>
-                        </div>
-                    </form>
-                    <hr/>
-                    <div class="border-custom mt-2 rounded">
-                        <div class="py-2 bg-custom">
-                            <p class="mb-0 text-center text-dark contactText">ငွေဖြည့်နည်းမသိပါက ဆက်သွယ်ရန်</p>
-                        </div>
-                        <div class="p-2 pb-0">
-                            <div class="row">
-                                <div class="col-12 mb-2">
-                                    <div class="text-start fs-13">
-                                         Viber
+                            <div class="p-2 pb-0">
+                                <div class="row">
+                                    <div class="col-12 mb-2">
+                                        <div class="text-start fs-13 viber">
+                                             Viber
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 d-flex mb-1">
+                                        <a href="#" class="d-flex align-items-center text-decoration-none"></a>
+                                        <i class="fa-solid fa-phone text-custom me-2"></i>
+                                        <div class="text-custom viberphNo">09123456789</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 d-flex mb-1">
-                                    <a href="#" class="d-flex align-items-center text-decoration-none"></a>
-                                    <i class="fa-solid fa-phone text-custom me-2"></i>
-                                    <div class="text-custom viberphNo">09123456789</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
+                <section class="footer">
+                    <div class="footerWrap">
+                        <div class="tabs" onclick="location.href='./../index.html'">
+                            <i class="fa-solid fa-home"></i>
+                            <span>ပင်မ</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../topup/topupkpay.html'">
+                            <i class="fa-solid fa-wallet" ></i>
+                            <span>ငွေဖြည့်</span>
+                        </div>
+                        <div class="tabs">
+                            <i class="fa-solid fa-phone" onclick="location.href='./../contact/contact.html'"></i>
+                            <span>ဆက်သွယ်ရန်</span>
+                        </div>
+                        <div class="tabs" onclick="location.href='./../user/user.html'">
+                            <i class="fa-solid fa-user"></i>
+                            <span>အကောင့်</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
 </body>
+<script src="./../darkMode.js"></script>
 </html>

@@ -19,7 +19,7 @@
                             <p class='mb-0'>One Shot 7 Gaming</p>
                         </div>
                         <div classs="noti" style="position: relative">
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-bell" onclick="location.href='./noti/noti.html'"></i>
                             <span class="notiNum">1</span>
                         </div>
                         <i class="fa-solid fa-moon mode"></i>
@@ -88,19 +88,19 @@
                 </div>
                 <section class="footer">
                     <div class="footerWrap">
-                        <div class="tabs">
+                        <div class="tabs" onclick="location.href='./index.html'">
                             <i class="fa-solid fa-home"></i>
                             <span>ပင်မ</span>
                         </div>
-                        <div class="tabs">
-                            <i class="fa-solid fa-wallet"></i>
+                        <div class="tabs" onclick="location.href='./topup/topupkpay.html'">
+                            <i class="fa-solid fa-wallet" ></i>
                             <span>ငွေဖြည့်</span>
                         </div>
                         <div class="tabs">
-                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-phone" onclick="location.href='./contact/contact.html'"></i>
                             <span>ဆက်သွယ်ရန်</span>
                         </div>
-                        <div class="tabs">
+                        <div class="tabs" onclick="location.href='./user/user.html'">
                             <i class="fa-solid fa-user"></i>
                             <span>အကောင့်</span>
                         </div>
@@ -110,20 +110,5 @@
     </div>
     
 </body>
-
-<script>
-    document.addEventListener('DOMContentLoaded',()=>{
-        const mode = document.querySelector(".mode");
-        const heroWrap = document.querySelector(".heroWrap");
-        const navBar = document.querySelector(".navBar")
-        mode.addEventListener("click",()=>{
-            mode.classList.toggle('fa-sun');
-            mode.classList.toggle('fa-moon');
-            heroWrap.classList.toggle('darkmode');
-            navBar.classList.toggle('darkmode');
-    })
-    })
-    
-</script>
-
+<script src="./darkMode.js"></script>
 </html>

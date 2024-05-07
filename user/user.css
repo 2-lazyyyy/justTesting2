@@ -26,9 +26,13 @@ body{
 .heroWrap{
     background-color: #f0f0f0;
     overflow-y: auto;
-    height: 115vh;
+    height: 120vh;
     top: 0px;
     position: relative;
+}
+
+.heroWrap.autoheight{
+    height: 150vh;
 }
 
 .heroWrap.darkmode{

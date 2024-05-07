@@ -367,10 +367,16 @@ marquee{
 
 .heroWrap.filter .thankWrap p{
     text-align: left;
+    font-size: 14px;
 }
 
 .heroWrap.filter.darkmode .thankWrap a{
     color: goldenrod;
+    
+}
+
+.heroWrap.filter .thankWrap a{
+    font-size: 14px;
 }
 
 .heroWrap.filter .thankBox{

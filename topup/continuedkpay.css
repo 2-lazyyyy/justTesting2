@@ -16,6 +16,10 @@ body{
     overflow-y: hidden;
 }
 
+.hero{
+    max-width: 450px;
+}
+
 .heroWrap{
     background-color: #fff;
     overflow-y: auto;

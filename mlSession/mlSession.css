@@ -317,7 +317,7 @@ marquee{
     width: 90%;
     background-color: #fff;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 5%;
     z-index: 99999;
     display: block!important;
